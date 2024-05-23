@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4txk40lklymk"]
+
+[ext_resource type="PackedScene" uid="uid://cq21cex5nju6y" path="res://Prefabs/Player.tscn" id="1_ny80o"]
+[ext_resource type="PackedScene" uid="uid://cxu1pachfje4v" path="res://Prefabs/Enemy.tscn" id="2_j1i5m"]
+
+[node name="StartingCave" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(143, 122)
+zoom = Vector2(2, 2)
+
+[node name="Enemy" parent="." instance=ExtResource("2_j1i5m")]
+position = Vector2(53, 159)
+collision_mask = 3
+
+[node name="Player" parent="." instance=ExtResource("1_ny80o")]
+position = Vector2(148, 157)
+collision_layer = 3
