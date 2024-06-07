@@ -540,8 +540,8 @@ animations = [{
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -31)
 sprite_frames = SubResource("SpriteFrames_vch6n")
-animation = &"Axe Walk Left"
-frame_progress = 0.85721
+animation = &"Axe Walk Down"
+frame_progress = 0.181263
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -15)
